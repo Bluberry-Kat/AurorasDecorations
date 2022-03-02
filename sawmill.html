@@ -21,12 +21,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 	<body class="wiki_page">
-		<nav id="main_nav" class="ls_sidenav">
-			<a class="ls_nav_banner href="./">
-				<img class="mod_icon" src="./icon.png" alt="Aurora's Decorations Icon">
-				<span>Aurora's Decorations</span>
-			</a>
-			<nav>
+		<div>
+			<input type="checkbox" id="main_nav_trigger" class="ls_sidenav_internal_trigger" aria-hidden="true">
+			<nav id="main_nav" class="ls_sidenav">
+				<a class="ls_nav_banner" href="./">
+					<img class="mod_icon" src="./icon.png" alt="Aurora's Decorations Icon">
+					<span>Aurora's Decorations</span>
+				</a>
+				<nav>
 	<ul>
 		<li class="wiki_nav_directory ls_nav_dir_entry"><div>
 				<a href="/AurorasDecorations/">Main page</a>
@@ -266,12 +268,13 @@
 </ul></li>
 	</ul>
 </nav>
-		</nav>
-		<a class="ls_sidenav_trigger ls_btn" ls_variant="fab" ls_data_target="main_nav"
-			aria-role="menu" aria-label="Menu" aria-description="Open the navigation menu.">
-			☰
-		</a>
-		<div class="ls_sidenav_darkened" ls_data_target="main_nav"></div>
+			</nav>
+			<label for="main_nav_trigger" class="ls_sidenav_trigger ls_btn" ls_variant="fab"
+				aria-role="menu" aria-label="Menu" aria-description="Open the navigation menu.">
+				☰
+			</label>
+			<label for="main_nav_trigger" class="ls_sidenav_darkened"></label>
+		</div>
 		<div class="wiki_content ls_sidenav_neighbor">
 			<main>
 				<article>
@@ -348,7 +351,6 @@
 			</footer>
 		</div>
 
-		<script src="https://lambdaurora.dev/script.mjs"></script>
 		<script src="./script.js"></script>
 	</body>
 </html>
