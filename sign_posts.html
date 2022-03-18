@@ -26,7 +26,7 @@ Indicate directions in a neat way!">
 			<input type="checkbox" id="main_nav_trigger" class="ls_sidenav_internal_trigger" aria-hidden="true">
 			<nav id="main_nav" class="ls_sidenav">
 				<a class="ls_nav_banner" href="./">
-					<img class="mod_icon" src="./icon.png" alt="Aurora's Decorations Icon">
+					<img class="mod_icon ls_pixelated" src="./icon.png" alt="Aurora's Decorations Icon">
 					<span>Aurora's Decorations</span>
 				</a>
 				<nav>
@@ -127,16 +127,6 @@ Indicate directions in a neat way!">
 		<li class="wiki_nav_directory ls_nav_dir_entry">Plants
 <ul>
 				<li class="wiki_nav_directory ls_nav_dir_entry"><div>
-						<a href="/AurorasDecorations/plants/lavender.html">Lavender</a>
-</div><ul>
-						<li><div>
-								<a href="/AurorasDecorations/plants/lavender.html#usage">Usage</a>
-</div></li>
-						<li><div>
-								<a href="/AurorasDecorations/plants/lavender.html#locations">Locations</a>
-</div></li>
-</ul></li>
-				<li class="wiki_nav_directory ls_nav_dir_entry"><div>
 						<a href="/AurorasDecorations/plants/daffodil.html">Daffodil</a>
 </div><ul>
 						<li><div>
@@ -144,6 +134,16 @@ Indicate directions in a neat way!">
 </div></li>
 						<li><div>
 								<a href="/AurorasDecorations/plants/daffodil.html#locations">Locations</a>
+</div></li>
+</ul></li>
+				<li class="wiki_nav_directory ls_nav_dir_entry"><div>
+						<a href="/AurorasDecorations/plants/lavender.html">Lavender</a>
+</div><ul>
+						<li><div>
+								<a href="/AurorasDecorations/plants/lavender.html#usage">Usage</a>
+</div></li>
+						<li><div>
+								<a href="/AurorasDecorations/plants/lavender.html#locations">Locations</a>
 </div></li>
 </ul></li>
 </ul></li>
@@ -243,16 +243,6 @@ Indicate directions in a neat way!">
 </ul></li>
 		<li class="wiki_nav_directory ls_nav_dir_entry">World Generation
 <ul>
-				<li class="wiki_nav_directory ls_nav_dir_entry">Biomes
-<ul>
-						<li class="wiki_nav_directory ls_nav_dir_entry"><div>
-								<a href="/AurorasDecorations/world_generation/biomes/lavender_plains.html">Lavender Plains</a>
-</div><ul>
-								<li><div>
-										<a href="/AurorasDecorations/world_generation/biomes/lavender_plains.html#content">Content</a>
-</div></li>
-</ul></li>
-</ul></li>
 				<li class="wiki_nav_directory ls_nav_dir_entry">Features
 <ul>
 						<li class="wiki_nav_directory ls_nav_dir_entry"><div>
@@ -266,13 +256,26 @@ Indicate directions in a neat way!">
 </div></li>
 </ul></li>
 </ul></li>
+				<li class="wiki_nav_directory ls_nav_dir_entry">Biomes
+<ul>
+						<li class="wiki_nav_directory ls_nav_dir_entry"><div>
+								<a href="/AurorasDecorations/world_generation/biomes/lavender_plains.html">Lavender Plains</a>
+</div><ul>
+								<li><div>
+										<a href="/AurorasDecorations/world_generation/biomes/lavender_plains.html#content">Content</a>
+</div></li>
+</ul></li>
+</ul></li>
 </ul></li>
 	</ul>
 </nav>
 			</nav>
-			<label for="main_nav_trigger" class="ls_sidenav_trigger ls_btn" ls_variant="fab"
-				aria-role="menu" aria-label="Menu" aria-description="Open the navigation menu.">
-				☰
+			<label for="main_nav_trigger" class="ls_sidenav_trigger ls_btn" ls_variant="fab" aria-role="menu" aria-label="Menu" aria-description="Open the navigation menu.">
+				<svg width="40" height="40" viewBox="0 0 40 40" stroke="var(--ls_theme_on_primary)" stroke-width="2px" shape-rendering="crispedges">
+					<line x1="12" y1="14" x2="28" y2="14"></line>
+					<line x1="12" y1="20" x2="28" y2="20"></line>
+					<line x1="12" y1="26" x2="28" y2="26"></line>
+				</svg>
 			</label>
 			<label for="main_nav_trigger" class="ls_sidenav_darkened"></label>
 		</div>
