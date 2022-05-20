@@ -3,19 +3,19 @@
 	<head>
 		<meta charset="utf-8" />
 
-		<title>Aurora's Decorations - Braziers</title>
+		<title>Aurora's Decorations - Redstone Lantern</title>
 
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="Aurora's Decorations - Braziers">
+		<meta property="og:title" content="Aurora's Decorations - Redstone Lantern">
 		<meta property="og:site_name" content="Aurora's Decorations">
-		<meta property="og:url" content="https://lambdaurora.dev/AurorasDecorations/braziers.html">
-		<meta property="og:description" content="Learn everything about braziers, a new decorative light source.">
-		<meta property="og:image" content="https://lambdaurora.dev/AurorasDecorations/images/render/lit_brazier.png"/>
+		<meta property="og:url" content="https://lambdaurora.dev/AurorasDecorations/redstone/redstone_lantern.html">
+		<meta property="og:description" content="Learn everything about the Redstone Lantern, a quite useful lantern for your redstone builds.">
+		<meta property="og:image" content="https://lambdaurora.dev/AurorasDecorations/images/render/redstone_lantern.png"/>
 
-		<link rel="icon" href="./icon.png" />
+		<link rel="icon" href="../icon.png" />
 
 		<link rel="stylesheet" type="text/css" href="https://lambdaurora.dev/style.css" />
-		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
 
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,8 +24,8 @@
 		<div>
 			<input type="checkbox" id="main_nav_trigger" class="ls_sidenav_internal_trigger" aria-hidden="true">
 			<nav id="main_nav" class="ls_sidenav">
-				<a class="ls_nav_banner" href="./">
-					<img class="mod_icon ls_pixelated" src="./icon.png" alt="Aurora's Decorations Icon">
+				<a class="ls_nav_banner" href="../">
+					<img class="mod_icon ls_pixelated" src="../icon.png" alt="Aurora's Decorations Icon">
 					<span>Aurora's Decorations</span>
 				</a>
 				<nav>
@@ -81,7 +81,7 @@
 </div></li>
 </ul></li>
 </ul></li>
-		<li style="background-color: rgba(0, 0, 0, 0.1)" open class="wiki_nav_directory ls_nav_dir_entry"><div>
+		<li class="wiki_nav_directory ls_nav_dir_entry"><div>
 				<a href="/AurorasDecorations/braziers.html">Braziers</a>
 </div><ul>
 				<li><div>
@@ -160,9 +160,9 @@
 </div></li>
 </ul></li>
 </ul></li>
-		<li class="wiki_nav_directory ls_nav_dir_entry">Redstone
+		<li class="wiki_nav_directory ls_nav_dir_entry" open>Redstone
 <ul>
-				<li class="wiki_nav_directory ls_nav_dir_entry"><div>
+				<li style="background-color: rgba(0, 0, 0, 0.1)" open class="wiki_nav_directory ls_nav_dir_entry"><div>
 						<a href="/AurorasDecorations/redstone/redstone_lantern.html">Redstone Lantern</a>
 </div><ul>
 						<li><div>
@@ -322,17 +322,19 @@
 		<div class="wiki_content ls_sidenav_neighbor">
 			<main>
 				<article>
-					<h1 id="braziers">Braziers</h1>
+					<h1 id="redstone-lantern">Redstone Lantern</h1>
 <p>
-	Braziers are decorative light sources that come in three different types: regular, soul and <a href="copper_sulfate.html">copper sulfate</a>.
+	Redstone Lantern is a type of lantern which primary color is red, like redstone!
 	<br />
-	They can be extinguished with a shovel, and lit up with a flint and steel, like campfires.
+	They emit some redstone dust particles while placed and lit.
+</p>
+<p>
+	In addition to the cosmetic part of this lantern, the Redstone Lantern introduces new connection mechanics. Aside from being like a Redstone Torch but waterloggable, they also prefer to transmit the power down rather than up.
 </p>
 <div class="wiki-gallery">
-	<img alt="Brazier" src="images/render/brazier.png" width="128" height="128" />
-	<img alt="Lit Brazier" src="images/render/lit_brazier.png" width="128" height="128" />
-	<img alt="Soul Brazier" src="images/render/soul_brazier.png" width="128" height="128" />
-	<img alt="Copper Sulfate Brazier" src="images/render/copper_sulfate_brazier.png" width="128" height="128" />
+	<img alt="Redstone Lantern Item" title="Redstone Lantern Item" class="ls_pixelated" src="../images/assets/item/redstone_lantern.png" width="128" height="128" />
+	<img alt="Lit Redstone Lantern" src="../images/render/redstone_lantern.png" width="128" height="128" />
+	<img alt="Redstone Lantern turned off" src="../images/render/redstone_lantern_off.png" width="128" height="128" />
 </div>
 <h2 id="crafting">Crafting</h2>
 <table class="crafting-grid">
@@ -341,24 +343,56 @@
 	</thead>
 	<tbody>
 		<tr>
-			<td>Iron Ingot</td>
-			<td>Campfire</td>
-			<td>Iron Ingot</td>
+			<td>Iron Nugget</td>
+			<td>Iron Nugget</td>
+			<td>Iron Nugget</td>
 		</tr>
 		<tr>
-			<td></td>			<td>Iron Ingot</td>
-			<td></td>
+			<td>Iron Nugget</td>
+			<td>Redstone Torch</td>
+			<td>Iron Nugget</td>
+		</tr>
+		<tr>
+			<td>Iron Nugget</td>
+			<td>Iron Nugget</td>
+			<td>Iron Nugget</td>
 		</tr>
 	</tbody>
 </table>
+<h2 id="mechanics">Mechanics</h2>
 <p>
-	Note: the type of the resulting brazier will depend on the type of campfire put into the recipe.
+	A redstone lantern never affects the block it is attached to, even if it is a mechanism component. For example, a redstone lantern attached to a redstone lamp does not activate the lamp.
+	<br />
+	In addition to that, when placed on the floor it will never power up the elements above.
 </p>
-<h2 id="notes">Notes</h2>
-<ul>
-	<li>Braziers will burn entities inside them.</li>
-	<li>Copper Sulfate Brazier inherits the special properties of the <a href="copper_sulfate.html#copper-sulfate-campfire">Copper Sulfate Campfire</a>.</li>
-</ul>
+<p>
+	A redstone lantern will power up adjacent horizontal elements, if hanging it will also power up downward, and upward if hung from the side of a block.
+</p>
+<p>
+	Redstone Lanterns experience "burn-out" like Redstone Torches, in doubt:
+</p>
+<blockquote>
+	A redstone torch experiences "burn-out" when it is forced to change state (by powering and de-powering the block it is attached to) more than eight times in 60 game ticks (three seconds, barring lag).
+	<div class="ls_source">
+		<a href="https://minecraft.fandom.com/wiki/Redstone_Torch#Usage">Minecraft Wiki</a>
+	</div>
+</blockquote>
+<h3 id="pictures">Pictures</h3>
+<h4 id="basic-connectivity">Basic connectivity</h4>
+<p>
+	<img alt="Basic connectivity" src="../images/render/redstone_lantern/basic_connectivity.png" class="ls_responsive_img" />
+</p>
+<h4 id="redstone-wall-lantern-connectivity">Redstone Wall Lantern connectivity</h4>
+<p>
+	<img alt="Redstone Wall Lantern connectivity" src="../images/render/redstone_lantern/wall_connectivity.png" class="ls_responsive_img" />
+</p>
+<h4 id="emission-directions">Emission Directions</h4>
+<p>
+	<img alt="Emission Directions" src="../images/render/redstone_lantern/emit_direction.png" class="ls_responsive_img" />
+</p>
+<p>
+	As you can see Redstone Lanterns allow to revert the behavior of Redstone Torches and transmit a signal along an axis downward.
+</p>
 
 				</article>
 			</main>
@@ -374,6 +408,6 @@
 			</footer>
 		</div>
 
-		<script src="./script.js"></script>
+		<script src="../script.js"></script>
 	</body>
 </html>
